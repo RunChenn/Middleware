@@ -1,23 +1,21 @@
 // app.js
 const express = require('express');
 const exphbs = require('express-handlebars');
-const moment = require('moment');
+const logRequest = require('./middleware/logRequest');
+
 const app = express();
 const port = 3000;
 
 app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', 'hbs');
 
-let demoLogger = (req, res, next) => {
-    console.log("Hello from logger");
-    next();
-};
+app.use(logRequest);
 
-app.use(demoLogger);
+const logs = []
 
 app.get('/', (req, res) => {
-//   res.send('列出全部 Todo');
-  res.render('index')
+    logs.push(res.locals.logs);
+    res.render('index', { logs })
 })
 
 // app.get('/new', (req, res) => {

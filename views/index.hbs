@@ -2,14 +2,8 @@
     <h1>Middleware practice</h1>
     <!-- operation -->
     <div class="row">
-        <div class="col-4 d-flex flex-column">
-        <a href="/" class="btn btn-success mb-3">GET /</a>
-        <a href="/delay" class="btn btn-success mb-3">GET /delay</a>
-        <a href="/new" class="btn btn-success mb-3">GET /new</a>
-        <a href="/id777" class="btn btn-success mb-3">GET /:id</a>
-        <form action="/" method="POST" class="d-flex flex-column mb-3">
-            <button class="btn btn-success">POST /</button>
-        </form>
-        </div>
+        {{#each logs}}
+        <div class="col">{{ this.date }}</div>
+        {{/each}}
     </div>
 </div>
