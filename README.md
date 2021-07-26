@@ -1,11 +1,13 @@
-# Middleware
+# Middleware show logs
 這是一個 Node.js + Express 將server的req和res記錄進logs的網站。
+
+![image](https://github.com/RunChenn/Middleware/blob/main/middleware_logs.png)
 
 ## Features - 產品功能
 此網站會將來自瀏覽器的request的紀錄：
-    - 在首頁顯示時間戳記、HTTP請求方法、URL
-    - 在終端機中顯示時間戳記、HTTP請求方法、URL、伺服器處理時間
-    - 寫入request_logs.txt檔案中
+- 在首頁顯示時間戳記、HTTP請求方法、URL
+- 在終端機中顯示時間戳記、HTTP請求方法、URL、伺服器處理時間
+- 寫入request_logs.txt檔案中
 
 ## Prerequisites - 環境建置與需求
 - [Node.js](https://nodejs.org/en/) - Node.js
