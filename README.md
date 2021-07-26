@@ -1,7 +1,7 @@
 # Middleware show logs
 這是一個 Node.js + Express 將server的req和res記錄進logs的網站。
 
-![image](https://github.com/RunChenn/Middleware/blob/main/middleware.png)
+![image](https://github.com/RunChenn/Middleware/blob/main/middleware_logs.png)
 
 ## Features - 產品功能
 此網站會將來自瀏覽器的request的紀錄：
